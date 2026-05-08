@@ -5,8 +5,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+avian3d = "0.6.1"
 # Use only features needed for a 2D game to improve compile time and size
-bevy = { version = "0.18", default-features = false, features = ["2d"] }
+bevy = { version = "0.18", default-features = false, features = ["3d"] }
 rand = "0.9"
 # Compile out low-severity logs to improve performance.
 # Remove these features if you want to profile your game with tracy.
